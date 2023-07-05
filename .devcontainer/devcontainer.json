@@ -16,8 +16,16 @@
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": true,
-			"installJupyterlab": true,
+			"installJupyterlab": false,
 			"version": "os-provided"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-toolsai.vscode-jupyter-powertoys"
+			]
 		}
 	}
 
