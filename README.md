@@ -7,5 +7,6 @@ Included are several Jupyter notebooks that implement sample code found in the L
 ## Setup
 - Click [Use this template](https://github.com/pjirsa/langchain-quickstart/generate)
 - Clone to your local machine -OR- open in Codespace
+- In a terminal, run `pip install -r requirements.txt`
 - Create a '.env' file at root of repo
 - Add `OPENAI_API_KEY="<your key here>"` to .env file
