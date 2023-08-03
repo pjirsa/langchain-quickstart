@@ -14,3 +14,17 @@ Included are several Jupyter notebooks that implement sample code found in the L
 - In a terminal, run `pip install -r requirements.txt`
 - Create a '.env' file at root of repo
 - Add `OPENAI_API_KEY="<your key here>"` to .env file
+
+## .env setup
+### For OpenAI
+- Create a '.env' file at root of repo
+- Add `OPENAI_API_KEY="<your key here>"` to .env file
+
+### For Azure OpenAI
+```
+# Use for Azure OpenAI
+OPENAI_API_KEY="<your key>"
+OPENAI_API_BASE="https://<your instance name>.openai.azure.com/"
+OPENAI_API_TYPE="azure"
+OPENAI_API_VERSION= "2023-05-15"
+```
