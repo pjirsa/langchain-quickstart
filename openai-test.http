@@ -1,0 +1,18 @@
+# az account get-access-token --resource https://cognitiveservices.azure.com --subscription <subid> --query "accessToken" #
+@openAIbase=https://emops-nc-demo.openai.azure.com/
+@deployment=gtp-35-phurbo
+@accessToken=your token here
+POST {{openAIbase}}openai/deployments/{{deployment}}/chat/completions?api-version=2023-05-15
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+Accept: application/json
+
+{
+    "messages":
+    [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Does Azure OpenAI support customer managed keys?"},
+        {"role": "assistant", "content": "Yes, customer managed keys are supported by Azure OpenAI."},
+        {"role": "user", "content": "Do other Azure AI services support this too?"}
+    ]
+}
